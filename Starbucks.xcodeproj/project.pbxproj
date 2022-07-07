@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162AE2876BD390063A3AF /* AppDelegate.swift */; };
 		762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162B02876BD390063A3AF /* SceneDelegate.swift */; };
-		762162B32876BD390063A3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162B22876BD390063A3AF /* ViewController.swift */; };
+		762162B32876BD390063A3AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162B22876BD390063A3AF /* HomeViewController.swift */; };
 		762162B62876BD390063A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762162B42876BD390063A3AF /* Main.storyboard */; };
 		762162B82876BD3C0063A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762162B72876BD3C0063A3AF /* Assets.xcassets */; };
 		762162BB2876BD3C0063A3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */; };
+		76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0EB702876F25A00685D0B /* DrinksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		762162AB2876BD390063A3AF /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762162AE2876BD390063A3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		762162B02876BD390063A3AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		762162B22876BD390063A3AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		762162B22876BD390063A3AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		762162B52876BD390063A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		762162B72876BD3C0063A3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		762162BA2876BD3C0063A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762162BC2876BD3C0063A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F0EB702876F25A00685D0B /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				762162AE2876BD390063A3AF /* AppDelegate.swift */,
 				762162B02876BD390063A3AF /* SceneDelegate.swift */,
-				762162B22876BD390063A3AF /* ViewController.swift */,
+				762162B22876BD390063A3AF /* HomeViewController.swift */,
+				76F0EB702876F25A00685D0B /* DrinksViewController.swift */,
 				762162B42876BD390063A3AF /* Main.storyboard */,
 				762162B72876BD3C0063A3AF /* Assets.xcassets */,
 				762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				762162B32876BD390063A3AF /* ViewController.swift in Sources */,
+				762162B32876BD390063A3AF /* HomeViewController.swift in Sources */,
 				762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */,
 				762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */,
+				76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
