@@ -17,32 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-hn-cmO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="302.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbanner" translatesAutoresizingMaskIntoConstraints="NO" id="2Yc-Qy-SDK">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="cg6-Ra-vVn"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uk9-Hz-Mjw">
-                                        <rect key="frame" x="10" y="269" width="394" height="31"/>
+                                        <rect key="frame" x="10" y="268" width="394" height="34.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYw-xw-lCb">
-                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="34.5"/>
                                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="envelope" catalog="system" title="What's New" imagePadding="5">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-gi-WbX">
-                                                <rect key="frame" x="121.5" y="0.0" width="99.5" height="31"/>
+                                                <rect key="frame" x="145.5" y="0.0" width="115" height="34.5"/>
                                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="aspectratio" catalog="system" title="Coupon" imagePadding="5">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="100" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-hV-D9R">
-                                                <rect key="frame" x="221" y="0.0" width="173" height="31"/>
+                                                <rect key="frame" x="260.5" y="0.0" width="133.5" height="34.5"/>
                                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system"/>
@@ -57,14 +60,13 @@
                                     <constraint firstAttribute="trailing" secondItem="2Yc-Qy-SDK" secondAttribute="trailing" id="KPo-SZ-rnw"/>
                                     <constraint firstAttribute="trailing" secondItem="uk9-Hz-Mjw" secondAttribute="trailing" constant="10" id="Sza-ie-nwo"/>
                                     <constraint firstAttribute="bottom" secondItem="uk9-Hz-Mjw" secondAttribute="bottom" id="U4a-P4-N2s"/>
-                                    <constraint firstAttribute="height" constant="300" id="Xfn-k3-s7G"/>
                                     <constraint firstItem="uk9-Hz-Mjw" firstAttribute="top" secondItem="2Yc-Qy-SDK" secondAttribute="bottom" constant="8" symbolic="YES" id="hae-v9-JeR"/>
                                     <constraint firstItem="2Yc-Qy-SDK" firstAttribute="leading" secondItem="CjE-hn-cmO" secondAttribute="leading" id="tar-eD-CWK"/>
                                     <constraint firstItem="2Yc-Qy-SDK" firstAttribute="top" secondItem="CjE-hn-cmO" secondAttribute="top" id="xVo-8B-Ipz"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yv1-YN-Sdc">
-                                <rect key="frame" x="0.0" y="308" width="414" height="3934"/>
+                                <rect key="frame" x="0.0" y="310.5" width="414" height="3931.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeI-ft-thi" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="3850"/>
@@ -257,6 +259,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="sFF-Vz-Gpb"/>
                     <size key="freeformSize" width="414" height="4325"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Yv1-YN-Sdc" id="yCX-6p-jiN"/>
+                        <outlet property="topBanner" destination="2Yc-Qy-SDK" id="Xzf-7k-Urc"/>
+                        <outlet property="topBannerHeight" destination="cg6-Ra-vVn" id="TNb-T1-s1x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
