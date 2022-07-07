@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76001CD528772698004FCF31 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76001CD428772698004FCF31 /* PayViewController.swift */; };
 		7604CE3C28770152002BA382 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604CE3B28770152002BA382 /* EventsViewController.swift */; };
 		7604CE3E2877015F002BA382 /* BreadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604CE3D2877015F002BA382 /* BreadsViewController.swift */; };
 		762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162AE2876BD390063A3AF /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76001CD428772698004FCF31 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		7604CE3B28770152002BA382 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		7604CE3D2877015F002BA382 /* BreadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadsViewController.swift; sourceTree = "<group>"; };
 		762162AB2876BD390063A3AF /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				76F0EB702876F25A00685D0B /* DrinksViewController.swift */,
 				7604CE3B28770152002BA382 /* EventsViewController.swift */,
 				7604CE3D2877015F002BA382 /* BreadsViewController.swift */,
+				76001CD428772698004FCF31 /* PayViewController.swift */,
 				762162B42876BD390063A3AF /* Main.storyboard */,
 				762162B72876BD3C0063A3AF /* Assets.xcassets */,
 				762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7604CE3C28770152002BA382 /* EventsViewController.swift in Sources */,
+				76001CD528772698004FCF31 /* PayViewController.swift in Sources */,
 				762162B32876BD390063A3AF /* HomeViewController.swift in Sources */,
 				762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */,
 				762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */,
