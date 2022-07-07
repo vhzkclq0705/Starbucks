@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7604CE3C28770152002BA382 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604CE3B28770152002BA382 /* EventsViewController.swift */; };
+		7604CE3E2877015F002BA382 /* BreadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604CE3D2877015F002BA382 /* BreadsViewController.swift */; };
 		762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162AE2876BD390063A3AF /* AppDelegate.swift */; };
 		762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162B02876BD390063A3AF /* SceneDelegate.swift */; };
 		762162B32876BD390063A3AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762162B22876BD390063A3AF /* HomeViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7604CE3B28770152002BA382 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		7604CE3D2877015F002BA382 /* BreadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadsViewController.swift; sourceTree = "<group>"; };
 		762162AB2876BD390063A3AF /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762162AE2876BD390063A3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		762162B02876BD390063A3AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				762162B02876BD390063A3AF /* SceneDelegate.swift */,
 				762162B22876BD390063A3AF /* HomeViewController.swift */,
 				76F0EB702876F25A00685D0B /* DrinksViewController.swift */,
+				7604CE3B28770152002BA382 /* EventsViewController.swift */,
+				7604CE3D2877015F002BA382 /* BreadsViewController.swift */,
 				762162B42876BD390063A3AF /* Main.storyboard */,
 				762162B72876BD3C0063A3AF /* Assets.xcassets */,
 				762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */,
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7604CE3C28770152002BA382 /* EventsViewController.swift in Sources */,
 				762162B32876BD390063A3AF /* HomeViewController.swift in Sources */,
 				762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */,
 				762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */,
 				76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */,
+				7604CE3E2877015F002BA382 /* BreadsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

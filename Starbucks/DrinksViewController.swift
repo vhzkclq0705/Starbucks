@@ -21,10 +21,10 @@ class DrinksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setImagesCircle()
+        setImageCorner()
     }
 
-    func setImagesCircle() {
+    func setImageCorner() {
         // 이미지의 크기가 150 * 150이기 때문에 값으 75로 주었습니다.
         [
             drink1,
