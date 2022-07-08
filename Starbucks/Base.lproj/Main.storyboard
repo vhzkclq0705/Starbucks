@@ -644,7 +644,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JT0-N0-kEG">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-ih-m65">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-ih-m65">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="57.5" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="1pI-6h-9w4"/>
@@ -652,9 +652,12 @@
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="1만원">
                                                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
-                                                                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="baseBackgroundColor" red="0.0028751145580000002" green="0.69648450610000001" blue="0.24333029989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="1PZ-Co-mgN"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxp-Jc-jDE">
                                                                                 <rect key="frame" x="67.5" y="0.0" width="60" height="40"/>
@@ -664,6 +667,9 @@
                                                                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="PdC-Us-Gng"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-OY-78g">
                                                                                 <rect key="frame" x="137.5" y="0.0" width="60" height="40"/>
@@ -673,6 +679,9 @@
                                                                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="dDi-wa-G40"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOK-rc-nxk">
                                                                                 <rect key="frame" x="207.5" y="0.0" width="186.5" height="40"/>
@@ -694,6 +703,9 @@
                                                                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="zus-To-ohI"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icl-Vm-4db">
                                                                                 <rect key="frame" x="69" y="0.0" width="67.5" height="40"/>
@@ -703,6 +715,9 @@
                                                                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="t57-Ev-xR9"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-an-8xz">
                                                                                 <rect key="frame" x="146.5" y="0.0" width="80" height="40"/>
@@ -712,6 +727,9 @@
                                                                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="baR-VD-pFg"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeH-rn-qfy">
                                                                                 <rect key="frame" x="236.5" y="0.0" width="157.5" height="40"/>
@@ -745,7 +763,7 @@
                                                             <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nhi-n8-75F">
                                                                 <rect key="frame" x="0.0" y="65" width="394" height="25"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPB-TH-u9w">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPB-TH-u9w">
                                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
@@ -754,8 +772,11 @@
                                                                         </constraints>
                                                                         <color key="tintColor" red="0.01035462757" green="0.58996770759999995" blue="0.24152934479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                        <state key="normal" image="circle" catalog="system"/>
+                                                                        <state key="normal" image="smallcircle.filled.circle" catalog="system"/>
                                                                         <state key="selected" image="circle" catalog="system"/>
+                                                                        <connections>
+                                                                            <action selector="didTapMeansButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="aMD-dJ-nDV"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신용카드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-FG-hEZ">
                                                                         <rect key="frame" x="35" y="0.0" width="359" height="25"/>
@@ -779,6 +800,9 @@
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="circle" catalog="system"/>
                                                                         <state key="selected" image="circle" catalog="system"/>
+                                                                        <connections>
+                                                                            <action selector="didTapMeansButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="2pW-DC-gab"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz5-bG-9yG">
                                                                         <rect key="frame" x="35" y="0.0" width="359" height="25"/>
@@ -802,6 +826,9 @@
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="circle" catalog="system"/>
                                                                         <state key="selected" image="circle" catalog="system"/>
+                                                                        <connections>
+                                                                            <action selector="didTapMeansButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="Hd5-D9-XTj"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSGPAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xr-2E-CUc">
                                                                         <rect key="frame" x="35" y="0.0" width="359" height="25"/>
@@ -863,6 +890,9 @@
                                                         <state key="normal" image="chevron.down" catalog="system">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="didTapBottomButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="aUg-7x-YKc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -950,7 +980,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="충전하기" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="baseBackgroundColor" red="0.01035462757" green="0.58996770759999995" blue="0.24152934479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
@@ -974,10 +1004,10 @@
                     <navigationItem key="navigationItem" title="일반 충전" id="muj-Si-VDG"/>
                     <size key="freeformSize" width="414" height="1154"/>
                     <connections>
-                        <outlet property="bottomButton" destination="pUe-6r-BOv" id="Rvf-KQ-qHL"/>
                         <outlet property="bottomViewHeight" destination="gez-yM-0lR" id="Ty5-4K-nno"/>
                         <outlet property="card" destination="J6I-Gd-jGY" id="Mps-aq-eao"/>
                         <outlet property="scrollView" destination="t9h-gz-cPc" id="7QA-YV-wEm"/>
+                        <outlet property="totalCostLabel" destination="F3N-Nf-E4G" id="Sma-d8-m1N"/>
                         <outletCollection property="costButtons" destination="HAd-ih-m65" collectionClass="NSMutableArray" id="UFj-Ba-sOp"/>
                         <outletCollection property="costButtons" destination="yxp-Jc-jDE" collectionClass="NSMutableArray" id="5AZ-BG-oW2"/>
                         <outletCollection property="costButtons" destination="Wv0-OY-78g" collectionClass="NSMutableArray" id="HQP-se-6u1"/>
@@ -1793,6 +1823,7 @@
         <image name="main7" width="1070" height="1133"/>
         <image name="main8" width="1079" height="549"/>
         <image name="main9" width="1077" height="1168"/>
+        <image name="smallcircle.filled.circle" catalog="system" width="128" height="121"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="topbanner" width="1170" height="775"/>
         <image name="wonsign.circle" catalog="system" width="128" height="121"/>
