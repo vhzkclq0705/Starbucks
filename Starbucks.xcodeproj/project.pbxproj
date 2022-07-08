@@ -16,6 +16,7 @@
 		762162B62876BD390063A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762162B42876BD390063A3AF /* Main.storyboard */; };
 		762162B82876BD3C0063A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762162B72876BD3C0063A3AF /* Assets.xcassets */; };
 		762162BB2876BD3C0063A3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */; };
+		769B3F4F2878A28500549DE2 /* ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B3F4E2878A28500549DE2 /* ChargeViewController.swift */; };
 		76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0EB702876F25A00685D0B /* DrinksViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		762162B72876BD3C0063A3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		762162BA2876BD3C0063A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762162BC2876BD3C0063A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		769B3F4E2878A28500549DE2 /* ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeViewController.swift; sourceTree = "<group>"; };
 		76F0EB702876F25A00685D0B /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,19 +66,28 @@
 		762162AD2876BD390063A3AF /* Starbucks */ = {
 			isa = PBXGroup;
 			children = (
+				769B3F4D2878A23000549DE2 /* Controllers */,
 				762162AE2876BD390063A3AF /* AppDelegate.swift */,
 				762162B02876BD390063A3AF /* SceneDelegate.swift */,
-				762162B22876BD390063A3AF /* HomeViewController.swift */,
-				76F0EB702876F25A00685D0B /* DrinksViewController.swift */,
-				7604CE3B28770152002BA382 /* EventsViewController.swift */,
-				7604CE3D2877015F002BA382 /* BreadsViewController.swift */,
-				76001CD428772698004FCF31 /* PayViewController.swift */,
 				762162B42876BD390063A3AF /* Main.storyboard */,
 				762162B72876BD3C0063A3AF /* Assets.xcassets */,
 				762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */,
 				762162BC2876BD3C0063A3AF /* Info.plist */,
 			);
 			path = Starbucks;
+			sourceTree = "<group>";
+		};
+		769B3F4D2878A23000549DE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				762162B22876BD390063A3AF /* HomeViewController.swift */,
+				76F0EB702876F25A00685D0B /* DrinksViewController.swift */,
+				7604CE3B28770152002BA382 /* EventsViewController.swift */,
+				7604CE3D2877015F002BA382 /* BreadsViewController.swift */,
+				76001CD428772698004FCF31 /* PayViewController.swift */,
+				769B3F4E2878A28500549DE2 /* ChargeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */,
 				762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */,
 				76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */,
+				769B3F4F2878A28500549DE2 /* ChargeViewController.swift in Sources */,
 				7604CE3E2877015F002BA382 /* BreadsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
