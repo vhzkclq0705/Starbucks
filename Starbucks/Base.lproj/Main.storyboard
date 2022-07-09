@@ -264,6 +264,15 @@
                         <outlet property="scrollView" destination="Yv1-YN-Sdc" id="yCX-6p-jiN"/>
                         <outlet property="topBanner" destination="2Yc-Qy-SDK" id="Xzf-7k-Urc"/>
                         <outlet property="topBannerHeight" destination="cg6-Ra-vVn" id="TNb-T1-s1x"/>
+                        <outletCollection property="banners" destination="0Bu-hf-fJY" collectionClass="NSMutableArray" id="FO6-6w-dN3"/>
+                        <outletCollection property="banners" destination="9WS-iQ-rMP" collectionClass="NSMutableArray" id="Fx7-fR-oNq"/>
+                        <outletCollection property="banners" destination="5lL-VJ-wZS" collectionClass="NSMutableArray" id="jxH-ii-keh"/>
+                        <outletCollection property="banners" destination="DcM-QD-4tW" collectionClass="NSMutableArray" id="JAV-7w-Cxs"/>
+                        <outletCollection property="banners" destination="OBT-A7-9n3" collectionClass="NSMutableArray" id="zqv-Ge-Jni"/>
+                        <outletCollection property="banners" destination="5bX-M6-U2q" collectionClass="NSMutableArray" id="Ge9-kg-pV9"/>
+                        <outletCollection property="banners" destination="h6a-ed-wfM" collectionClass="NSMutableArray" id="mia-0s-R68"/>
+                        <outletCollection property="banners" destination="aOg-WR-omg" collectionClass="NSMutableArray" id="0WR-Wt-sLc"/>
+                        <outletCollection property="banners" destination="wgQ-WO-9Ls" collectionClass="NSMutableArray" id="rXJ-x8-8M3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -292,6 +301,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Hd-kD-yY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="-2231"/>
+        </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="JKQ-LE-9Tf">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewController" id="5Zr-Dz-esf" customClass="PopupViewController" customModule="Starbucks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfy-bj-SMU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup" translatesAutoresizingMaskIntoConstraints="NO" id="W4f-ze-jmS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="703"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Ry-eK-vCD" userLabel="Bottom">
+                                <rect key="frame" x="20" y="762" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="300" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrU-bR-071">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="자세히 보기" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.01176470588" green="0.58823529409999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapChargeButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="WIr-Wt-wd7"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bkG-RC-WeM">
+                                        <rect key="frame" x="0.0" y="38" width="374" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTl-NP-kdR">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="62"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="다시보지 않기">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didTapCloseButton:" destination="5Zr-Dz-esf" eventType="touchUpInside" id="ULu-Uv-yV1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bb-6h-WZj">
+                                                <rect key="frame" x="207" y="0.0" width="167" height="62"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title="닫기" imagePadding="10">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="10"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didTapCloseButton:" destination="5Zr-Dz-esf" eventType="touchUpInside" id="RZY-2A-lg9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5RO-tX-9lv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQc-Lp-hjQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nQc-Lp-hjQ" firstAttribute="trailing" secondItem="3Ry-eK-vCD" secondAttribute="trailing" constant="20" id="0kw-A3-gsc"/>
+                            <constraint firstItem="W4f-ze-jmS" firstAttribute="leading" secondItem="nQc-Lp-hjQ" secondAttribute="leading" id="256-Eq-oQg"/>
+                            <constraint firstItem="3Ry-eK-vCD" firstAttribute="leading" secondItem="nQc-Lp-hjQ" secondAttribute="leading" constant="20" id="4lQ-nr-FuI"/>
+                            <constraint firstItem="W4f-ze-jmS" firstAttribute="trailing" secondItem="nQc-Lp-hjQ" secondAttribute="trailing" id="6sJ-NG-uBf"/>
+                            <constraint firstItem="3Ry-eK-vCD" firstAttribute="top" secondItem="W4f-ze-jmS" secondAttribute="bottom" constant="15" id="S7Z-iy-P9V"/>
+                            <constraint firstItem="W4f-ze-jmS" firstAttribute="top" secondItem="nQc-Lp-hjQ" secondAttribute="top" id="Xth-hr-nQe"/>
+                            <constraint firstItem="3Ry-eK-vCD" firstAttribute="bottom" secondItem="nQc-Lp-hjQ" secondAttribute="bottom" id="mGL-Vq-83l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-DH-7uR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="-1507"/>
         </scene>
         <!--Other-->
         <scene sceneID="j8k-1x-w1S">
@@ -466,7 +551,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="wonsign.circle" catalog="system" imagePlacement="top" title="일반 충전" imagePadding="10"/>
                                                                         <connections>
-                                                                            <segue destination="ZtF-C3-fZn" kind="push" id="Q9c-64-mJ4"/>
+                                                                            <action selector="didTapChargeButton:" destination="St7-gC-cut" eventType="touchUpInside" id="et3-1R-dTF"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -564,19 +649,21 @@
                     <connections>
                         <outlet property="card" destination="83l-1D-gkf" id="6JG-wt-tgk"/>
                         <outlet property="contentView" destination="hlS-Dh-8JH" id="9mc-9t-dvz"/>
+                        <outlet property="moneyLabel" destination="ra8-EI-pYU" id="500-Du-MUI"/>
                         <outlet property="scrollView" destination="A75-nd-76I" id="Ys1-hS-7OE"/>
                         <outlet property="scrollViewTop" destination="5fU-yi-S69" id="92z-rQ-f14"/>
                         <outlet property="star" destination="qcO-W2-3q3" id="Mtf-CI-JbL"/>
+                        <segue destination="ZtF-C3-fZn" kind="push" id="6oD-7M-oOU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehj-pa-VhY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940.5797101449277" y="-779.46428571428567"/>
+            <point key="canvasLocation" x="1942" y="-793"/>
         </scene>
         <!--일반 충전-->
         <scene sceneID="9rI-ul-6cq">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="ZtF-C3-fZn" customClass="ChargeViewController" customModule="Starbucks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChargeViewController" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="ZtF-C3-fZn" customClass="ChargeViewController" customModule="Starbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rd8-Dm-PRh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1215"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -585,7 +672,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="931"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-UF-6Do" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="25" width="414" height="907"/>
+                                        <rect key="frame" x="0.0" y="25" width="414" height="887"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7Td-9M-1xh">
                                                 <rect key="frame" x="20" y="0.0" width="394" height="486.5"/>
@@ -644,7 +731,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JT0-N0-kEG">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-ih-m65">
+                                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-ih-m65">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="57.5" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="NGT-H1-lgv"/>
@@ -659,7 +746,7 @@
                                                                                     <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="1PZ-Co-mgN"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxp-Jc-jDE">
+                                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxp-Jc-jDE">
                                                                                 <rect key="frame" x="67.5" y="0.0" width="60" height="40"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="3만원">
@@ -671,7 +758,7 @@
                                                                                     <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="PdC-Us-Gng"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-OY-78g">
+                                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-OY-78g">
                                                                                 <rect key="frame" x="137.5" y="0.0" width="60" height="40"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="5만원">
@@ -692,7 +779,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DjU-MB-6cy">
                                                                         <rect key="frame" x="0.0" y="50" width="394" height="40"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ3-G4-CfE">
+                                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ3-G4-CfE">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="59" height="40"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="7만원">
@@ -704,7 +791,7 @@
                                                                                     <action selector="didTapCostButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="zus-To-ohI"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icl-Vm-4db">
+                                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icl-Vm-4db">
                                                                                 <rect key="frame" x="69" y="0.0" width="67.5" height="40"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="10만원">
@@ -890,7 +977,7 @@
                                                     <constraint firstAttribute="height" constant="20" id="Rmo-Kx-QUj"/>
                                                 </constraints>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-og-9Z4">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-og-9Z4">
                                                 <rect key="frame" x="0.0" y="807" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스타벅스 카드 충전은 1회 1만원부터 55만원까지 가능하며, 충전 후 총액이 55만원을 초과할 수 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70t-oL-XIG">
@@ -923,7 +1010,7 @@
                                             <constraint firstItem="QOt-kL-0kQ" firstAttribute="leading" secondItem="1gS-UF-6Do" secondAttribute="leading" constant="20" id="UeK-wk-89S"/>
                                             <constraint firstItem="QtA-b7-9m9" firstAttribute="top" secondItem="7Td-9M-1xh" secondAttribute="bottom" constant="20" id="VVk-Cb-pIP"/>
                                             <constraint firstItem="pXc-GE-Htz" firstAttribute="leading" secondItem="1gS-UF-6Do" secondAttribute="leading" constant="20" id="Wyq-Q1-xLI"/>
-                                            <constraint firstAttribute="bottom" secondItem="lBs-og-9Z4" secondAttribute="bottom" constant="20" symbolic="YES" id="Xp1-em-0Se"/>
+                                            <constraint firstAttribute="bottom" secondItem="lBs-og-9Z4" secondAttribute="bottom" id="Xp1-em-0Se"/>
                                             <constraint firstAttribute="trailing" secondItem="bmh-rt-HCm" secondAttribute="trailing" id="cen-I5-hTI"/>
                                             <constraint firstItem="pXc-GE-Htz" firstAttribute="top" secondItem="QOt-kL-0kQ" secondAttribute="bottom" constant="25" id="dtG-Z5-HUa"/>
                                             <constraint firstItem="QOt-kL-0kQ" firstAttribute="top" secondItem="bmh-rt-HCm" secondAttribute="bottom" constant="25" id="hMf-8Z-pXb"/>
@@ -973,6 +1060,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="baseBackgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapChargeButton:" destination="ZtF-C3-fZn" eventType="touchUpInside" id="84D-Wf-suJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -995,8 +1085,9 @@
                     <navigationItem key="navigationItem" title="일반 충전" id="muj-Si-VDG"/>
                     <size key="freeformSize" width="414" height="1215"/>
                     <connections>
-                        <outlet property="bottomViewHeight" destination="gez-yM-0lR" id="Ty5-4K-nno"/>
                         <outlet property="card" destination="J6I-Gd-jGY" id="Mps-aq-eao"/>
+                        <outlet property="moneyLabel" destination="i9l-SU-xoW" id="qI1-N9-xMA"/>
+                        <outlet property="noticeView" destination="lBs-og-9Z4" id="pq4-Li-rCX"/>
                         <outlet property="scrollView" destination="t9h-gz-cPc" id="7QA-YV-wEm"/>
                         <outlet property="totalCostLabel" destination="F3N-Nf-E4G" id="Sma-d8-m1N"/>
                         <outletCollection property="costButtons" destination="HAd-ih-m65" collectionClass="NSMutableArray" id="UFj-Ba-sOp"/>
@@ -1215,15 +1306,15 @@
                     </view>
                     <size key="freeformSize" width="1542" height="210"/>
                     <connections>
-                        <outlet property="drink1" destination="6Zt-vd-ckJ" id="85d-dB-PNs"/>
-                        <outlet property="drink2" destination="4GT-U5-516" id="GxT-oo-OYT"/>
-                        <outlet property="drink3" destination="Hwm-Xp-vyc" id="BwL-vk-yg7"/>
-                        <outlet property="drink4" destination="KgL-8h-dMb" id="OUI-Wb-v6w"/>
-                        <outlet property="drink5" destination="QKR-NC-4rR" id="Nh2-fW-TjS"/>
-                        <outlet property="drink6" destination="YMG-Uc-TMi" id="OdR-bm-wAN"/>
-                        <outlet property="drink7" destination="nov-ig-Q8i" id="nJM-pD-aMM"/>
-                        <outlet property="drink8" destination="Udb-Ye-Nqi" id="Cv7-iC-MHt"/>
-                        <outlet property="drink9" destination="2qB-mc-5Fa" id="6gM-9M-YN6"/>
+                        <outletCollection property="drinks" destination="6Zt-vd-ckJ" collectionClass="NSMutableArray" id="XcD-3l-UrC"/>
+                        <outletCollection property="drinks" destination="4GT-U5-516" collectionClass="NSMutableArray" id="ys8-UR-9WQ"/>
+                        <outletCollection property="drinks" destination="Hwm-Xp-vyc" collectionClass="NSMutableArray" id="9AD-pn-Wsn"/>
+                        <outletCollection property="drinks" destination="KgL-8h-dMb" collectionClass="NSMutableArray" id="CmO-Mp-zpc"/>
+                        <outletCollection property="drinks" destination="QKR-NC-4rR" collectionClass="NSMutableArray" id="BRN-IF-Dh8"/>
+                        <outletCollection property="drinks" destination="YMG-Uc-TMi" collectionClass="NSMutableArray" id="eCL-AH-hDy"/>
+                        <outletCollection property="drinks" destination="nov-ig-Q8i" collectionClass="NSMutableArray" id="u88-aZ-dqs"/>
+                        <outletCollection property="drinks" destination="Udb-Ye-Nqi" collectionClass="NSMutableArray" id="Y1u-32-GAY"/>
+                        <outletCollection property="drinks" destination="2qB-mc-5Fa" collectionClass="NSMutableArray" id="MGa-7f-m9S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAV-Yd-yCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1530,15 +1621,15 @@
                     </view>
                     <size key="freeformSize" width="2441" height="250"/>
                     <connections>
-                        <outlet property="event1" destination="H9s-vB-uJe" id="EF8-VS-QwR"/>
-                        <outlet property="event2" destination="ATj-BG-vcJ" id="NKt-hV-prB"/>
-                        <outlet property="event3" destination="3hl-uG-pHZ" id="h0z-WT-ta3"/>
-                        <outlet property="event4" destination="vQE-xz-PaO" id="NzO-op-DnB"/>
-                        <outlet property="event5" destination="mYl-VX-f5J" id="4mm-kX-kNQ"/>
-                        <outlet property="event6" destination="Cb3-Hf-dj7" id="FjA-Oe-zjM"/>
-                        <outlet property="event7" destination="Qgf-Fw-0hQ" id="hdI-qA-Luq"/>
-                        <outlet property="event8" destination="mml-bM-GDM" id="UNV-NB-IH0"/>
-                        <outlet property="event9" destination="dIE-Tl-wmJ" id="8Tm-4y-hHR"/>
+                        <outletCollection property="events" destination="H9s-vB-uJe" collectionClass="NSMutableArray" id="Ysg-Ji-jHu"/>
+                        <outletCollection property="events" destination="ATj-BG-vcJ" collectionClass="NSMutableArray" id="gzR-vz-0rO"/>
+                        <outletCollection property="events" destination="3hl-uG-pHZ" collectionClass="NSMutableArray" id="oxl-kW-oog"/>
+                        <outletCollection property="events" destination="vQE-xz-PaO" collectionClass="NSMutableArray" id="w7j-EE-vxe"/>
+                        <outletCollection property="events" destination="mYl-VX-f5J" collectionClass="NSMutableArray" id="LTq-9F-vVD"/>
+                        <outletCollection property="events" destination="Cb3-Hf-dj7" collectionClass="NSMutableArray" id="N3d-Uz-eRt"/>
+                        <outletCollection property="events" destination="Qgf-Fw-0hQ" collectionClass="NSMutableArray" id="VzJ-Ey-62B"/>
+                        <outletCollection property="events" destination="mml-bM-GDM" collectionClass="NSMutableArray" id="YiZ-1y-A52"/>
+                        <outletCollection property="events" destination="dIE-Tl-wmJ" collectionClass="NSMutableArray" id="So4-h0-JaO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lk-U7-7yM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1746,15 +1837,15 @@
                     </view>
                     <size key="freeformSize" width="1540" height="210"/>
                     <connections>
-                        <outlet property="bread1" destination="JNx-dM-txh" id="MIi-iN-eBd"/>
-                        <outlet property="bread2" destination="WRU-mB-Nkl" id="Rfu-Uu-UYO"/>
-                        <outlet property="bread3" destination="F3c-8J-wBx" id="B7q-xe-2qf"/>
-                        <outlet property="bread4" destination="Yo0-Q3-NbV" id="ZQS-ba-LxD"/>
-                        <outlet property="bread5" destination="mE4-ZY-FHF" id="BLK-Z3-1GQ"/>
-                        <outlet property="bread6" destination="hBJ-Yl-wn7" id="FFd-LJ-RAR"/>
-                        <outlet property="bread7" destination="uwj-OU-x0d" id="NHo-mc-WbO"/>
-                        <outlet property="bread8" destination="79f-mW-enN" id="4Rh-Yv-x1C"/>
-                        <outlet property="bread9" destination="5BR-ss-u1Y" id="nKw-cl-JmA"/>
+                        <outletCollection property="breads" destination="JNx-dM-txh" collectionClass="NSMutableArray" id="fud-7S-whV"/>
+                        <outletCollection property="breads" destination="WRU-mB-Nkl" collectionClass="NSMutableArray" id="wDK-J6-Idr"/>
+                        <outletCollection property="breads" destination="F3c-8J-wBx" collectionClass="NSMutableArray" id="ZbD-Li-4xj"/>
+                        <outletCollection property="breads" destination="Yo0-Q3-NbV" collectionClass="NSMutableArray" id="b1g-XY-Qjv"/>
+                        <outletCollection property="breads" destination="mE4-ZY-FHF" collectionClass="NSMutableArray" id="hZb-wS-AVs"/>
+                        <outletCollection property="breads" destination="hBJ-Yl-wn7" collectionClass="NSMutableArray" id="Lzi-Hc-z5n"/>
+                        <outletCollection property="breads" destination="uwj-OU-x0d" collectionClass="NSMutableArray" id="CfG-8c-D1f"/>
+                        <outletCollection property="breads" destination="79f-mW-enN" collectionClass="NSMutableArray" id="g1x-SD-Dqf"/>
+                        <outletCollection property="breads" destination="5BR-ss-u1Y" collectionClass="NSMutableArray" id="SfX-nC-w0y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWR-Gd-xMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1814,10 +1905,12 @@
         <image name="main7" width="1070" height="1133"/>
         <image name="main8" width="1079" height="549"/>
         <image name="main9" width="1077" height="1168"/>
+        <image name="popup" width="1170" height="1934"/>
         <image name="smallcircle.filled.circle" catalog="system" width="128" height="121"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="topbanner" width="1170" height="775"/>
         <image name="wonsign.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

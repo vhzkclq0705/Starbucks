@@ -12,14 +12,43 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var topBanner: UIImageView!
     @IBOutlet weak var topBannerHeight: NSLayoutConstraint!
+    @IBOutlet var banners: [UIImageView]!
+    
     
     // topBanner의 최대, 최소 높이
     let maxHeight: CGFloat = 300
     let minHeight: CGFloat = 40
     
+    // 팝업을 1번만 띄우기 위한 변수
+    var popup = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setup()
+    }
+    
+    // 뷰가 나타나면 팝업 띄우기
+    override func viewDidAppear(_ animated: Bool) {
+        if popup {
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "PopupViewController") as? PopupViewController else { return }
+            vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true)
+            
+            popup = false
+        }
+    }
+    
+    func setup() {
         scrollView.delegate = self
+        
+        banners.forEach {
+            $0.layer.masksToBounds = false
+            $0.layer.shadowColor = UIColor.lightGray.cgColor
+            $0.layer.shadowOffset = CGSize(width: 0, height: 5)
+            $0.layer.shadowOpacity = 0.3
+        }
     }
 }
 

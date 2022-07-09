@@ -16,6 +16,8 @@
 		762162B62876BD390063A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762162B42876BD390063A3AF /* Main.storyboard */; };
 		762162B82876BD3C0063A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762162B72876BD3C0063A3AF /* Assets.xcassets */; };
 		762162BB2876BD3C0063A3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762162B92876BD3C0063A3AF /* LaunchScreen.storyboard */; };
+		766DE048287986A900CEDFC5 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766DE047287986A900CEDFC5 /* NumberFormatter.swift */; };
+		766DE04A28798E1D00CEDFC5 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766DE04928798E1D00CEDFC5 /* PopupViewController.swift */; };
 		769B3F4F2878A28500549DE2 /* ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B3F4E2878A28500549DE2 /* ChargeViewController.swift */; };
 		76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0EB702876F25A00685D0B /* DrinksViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		762162B72876BD3C0063A3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		762162BA2876BD3C0063A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762162BC2876BD3C0063A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766DE047287986A900CEDFC5 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		766DE04928798E1D00CEDFC5 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		769B3F4E2878A28500549DE2 /* ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeViewController.swift; sourceTree = "<group>"; };
 		76F0EB702876F25A00685D0B /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				769B3F4D2878A23000549DE2 /* Controllers */,
+				766DE047287986A900CEDFC5 /* NumberFormatter.swift */,
 				762162AE2876BD390063A3AF /* AppDelegate.swift */,
 				762162B02876BD390063A3AF /* SceneDelegate.swift */,
 				762162B42876BD390063A3AF /* Main.storyboard */,
@@ -80,6 +85,7 @@
 		769B3F4D2878A23000549DE2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				766DE04928798E1D00CEDFC5 /* PopupViewController.swift */,
 				762162B22876BD390063A3AF /* HomeViewController.swift */,
 				76F0EB702876F25A00685D0B /* DrinksViewController.swift */,
 				7604CE3B28770152002BA382 /* EventsViewController.swift */,
@@ -166,8 +172,10 @@
 				762162B32876BD390063A3AF /* HomeViewController.swift in Sources */,
 				762162AF2876BD390063A3AF /* AppDelegate.swift in Sources */,
 				762162B12876BD390063A3AF /* SceneDelegate.swift in Sources */,
+				766DE04A28798E1D00CEDFC5 /* PopupViewController.swift in Sources */,
 				76F0EB712876F25A00685D0B /* DrinksViewController.swift in Sources */,
 				769B3F4F2878A28500549DE2 /* ChargeViewController.swift in Sources */,
+				766DE048287986A900CEDFC5 /* NumberFormatter.swift in Sources */,
 				7604CE3E2877015F002BA382 /* BreadsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
