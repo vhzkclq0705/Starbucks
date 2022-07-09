@@ -18,6 +18,7 @@ class ChargeViewController: UIViewController {
     @IBOutlet weak var moneyLabel: UILabel!
     @IBOutlet weak var noticeView: UIView!
     @IBOutlet weak var totalCostLabel: UILabel!
+    @IBOutlet weak var bottomView: UIStackView!
     @IBOutlet var costButtons: [UIButton]!
     @IBOutlet var meansButtons: [UIButton]!
     

@@ -1105,6 +1105,7 @@
                     <navigationItem key="navigationItem" title="일반 충전" id="muj-Si-VDG"/>
                     <size key="freeformSize" width="414" height="1215"/>
                     <connections>
+                        <outlet property="bottomView" destination="yox-hl-s6u" id="gUL-vg-5QG"/>
                         <outlet property="card" destination="J6I-Gd-jGY" id="Mps-aq-eao"/>
                         <outlet property="moneyLabel" destination="i9l-SU-xoW" id="qI1-N9-xMA"/>
                         <outlet property="noticeView" destination="lBs-og-9Z4" id="pq4-Li-rCX"/>
