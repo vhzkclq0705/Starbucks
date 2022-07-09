@@ -17,8 +17,6 @@ class ChargeViewController: UIViewController {
     @IBOutlet var costButtons: [UIButton]!
     @IBOutlet var meansButtons: [UIButton]!
     
-    var costButtonIndex = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,8 +36,10 @@ class ChargeViewController: UIViewController {
         
         costButtons.forEach {
             $0.layer.cornerRadius = 5
-            $0.layer.borderWidth = 0.5
-            $0.layer.borderColor = UIColor.darkGray.cgColor
+            if $0.titleLabel?.text != "1만원" {
+                $0.layer.borderWidth = 0.5
+                $0.layer.borderColor = UIColor.darkGray.cgColor
+            }
         }
         
         bottomViewHeight.constant = 0
@@ -49,10 +49,12 @@ class ChargeViewController: UIViewController {
         costButtons.forEach {
             $0.configuration?.baseBackgroundColor = .white
             $0.configuration?.baseForegroundColor = .darkGray
+            $0.layer.borderWidth = 0.5
         }
         
         sender.configuration?.baseBackgroundColor = #colorLiteral(red: 0.01176470588, green: 0.6950220829, blue: 0.2415293448, alpha: 1)
         sender.configuration?.baseForegroundColor = .white
+        sender.layer.borderWidth = 0
     }
     
     @IBAction func didTapMeansButton(_ sender: UIButton) {
