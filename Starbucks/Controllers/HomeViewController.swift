@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var topBanner: UIImageView!
+    @IBOutlet weak var deliverButton: UIButton!
     @IBOutlet weak var topBannerHeight: NSLayoutConstraint!
     @IBOutlet var banners: [UIImageView]!
     
@@ -18,6 +19,9 @@ class HomeViewController: UIViewController {
     // topBanner의 최대, 최소 높이
     let maxHeight: CGFloat = 300
     let minHeight: CGFloat = 40
+    
+    // 스크롤 방향을 알기 위한 변수
+    var lastOffset: CGFloat = 0
     
     // 팝업을 1번만 띄우기 위한 변수
     var popup = true
@@ -43,6 +47,7 @@ class HomeViewController: UIViewController {
     func setup() {
         scrollView.delegate = self
         
+        // 이벤트 배너들의 그림자 설정
         banners.forEach {
             $0.layer.masksToBounds = false
             $0.layer.shadowColor = UIColor.lightGray.cgColor
@@ -56,6 +61,19 @@ extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // 스크롤 뷰의 스크롤 위치, 스크롤을 내리면 증가
         let scrollPosition = scrollView.contentOffset.y
+        
+        // 스크롤을 위로 하면 Delivers글자가 표시되고 아래로 하면 사라짐
+        if lastOffset > scrollView.contentOffset.y {
+            // 버튼이 filled 속성이기 때문에, 폰트를 바꾸기 위해서는 configuration을 사용해야 한다
+            var attribute = AttributedString("Delivers")
+            attribute.font = .systemFont(ofSize: 22, weight: .bold)
+            
+            deliverButton.configuration?.attributedTitle = attribute
+        } else {
+            deliverButton.setTitle("", for: .normal)
+        }
+        
+        lastOffset = scrollView.contentOffset.y
         
         // y = topBanner의 높이제약 - 스크롤 뷰의 위치
         // 스크롤을 내리면 topBanner의 높이 감소
@@ -80,5 +98,6 @@ extension HomeViewController: UIScrollViewDelegate {
             // 스크롤에 따라 topBanner가 자연스럽게 움직임
             scrollView.contentOffset.y = 0
         }
+        
     }
 }
