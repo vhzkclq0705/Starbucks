@@ -15,9 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var topBannerHeight: NSLayoutConstraint!
     @IBOutlet var banners: [UIImageView]!
     
-    
     // topBanner의 최대, 최소 높이
-    let maxHeight: CGFloat = 300
+    let maxHeight: CGFloat = 260
     let minHeight: CGFloat = 40
     
     // 스크롤 방향을 알기 위한 변수
