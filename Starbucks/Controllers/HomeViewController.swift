@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         setup()
     }
     
-    // 뷰가 나타나면 팝업 띄우기
+    // MARK: 뷰가 나타나면 팝업 띄우기
     override func viewDidAppear(_ animated: Bool) {
         if popup {
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "PopupViewController") as? PopupViewController else { return }
